@@ -6,15 +6,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
     const Getcatalog = () => {
-        const [products, setProducts] = useState([]);
+        const [recipes, setRecipes] = useState([]);
         const navigate = useNavigate();
 
         useEffect(() => {
-            fetch("http://localhost:8081/products")
+            fetch("http://localhost:8081/listRecipes")
                 .then((response) => response.json())
                 .then((data) => {
-                    console.log("Show Catalog of Products :", data);
-                    setProducts(data);
+                    console.log("Show Catalog of Recipes :", data);
+                    setRecipes(data);
                 });
         }, []);
 
@@ -30,10 +30,10 @@ function App() {
                 </div>
 
                 <div className="row mt-4">
-                    {products.map((el) => (
+                    {recipes.map((el) => (
                         <div key={el.id} className="col-md-4 mb-3">
                             <div className="card border-0 shadow-sm">
-                                <img src={el.image} className="card-img-top" alt="product" />
+                                <img src={el.image} className="card-img-top" alt="recipe" />
                                 <div className="card-body">
                                     <h5 className="card-title">{el.title}</h5>
                                     <p className="card-text">Category: {el.category}</p>
@@ -62,14 +62,14 @@ function App() {
                 <p><strong>Date:</strong> 4/27/2024</p>
                 <p><strong>Professor Name:</strong> Ali Jannesari</p>
                 <p><strong>Project Introduction:</strong> 
-                Welcome to our project! In this application, we've created a comprehensive catalog management system that allows users to view, add, modify, and delete products. With a sleek and intuitive interface, users can effortlessly navigate through the catalog, making it an ideal solution for businesses looking to manage their product inventory efficiently. Our team, comprised of Ellery Sabado and Owen Jewell, developed this project for the course COM S 319 under the guidance of Professor Ali Jannesari. We hope you find our application useful and user-friendly!</p>
+                Welcome to our project! In this application, we've created a comprehensive catalog management system that allows users to view, add, modify, and delete recipes. With a sleek and intuitive interface, users can effortlessly navigate through the catalog, making it an ideal solution for businesses looking to manage their recipe inventory efficiently. Our team, comprised of Ellery Sabado and Owen Jewell, developed this project for the course COM S 319 under the guidance of Professor Ali Jannesari. We hope you find our application useful and user-friendly!</p>
                 <button className="btn btn-primary rounded-pill" onClick={() => navigate('/getcatalog')}>Back to Catalog</button>
             </div>
         );
     };
 
     const Getcatalogid = () => {
-        const [oneProduct, setOneProduct] = useState([]);
+        const [oneRecipe, setOneRecipe] = useState([]);
         const navigate = useNavigate();
         const [id, setId] = useState("");
     
@@ -78,8 +78,8 @@ function App() {
                 fetch(`http://localhost:8081/${id}`)
                     .then((response) => response.json())
                     .then((data) => {
-                        console.log("Show one product :", data);
-                        setOneProduct([data]); // Modify this line
+                        console.log("Show one recipe :", data);
+                        setOneRecipe([data]); // Modify this line
                     });
             }
         }, [id]);
@@ -96,9 +96,9 @@ function App() {
                 <br />
                 <input type="text" placeholder="Enter ID" onChange={(e) => setId(e.target.value)} />
     
-                {oneProduct.map((el) => (
+                {oneRecipe.map((el) => (
                     <div key={el.id}>
-                        <img src={el.image} alt="product" width={30} />
+                        <img src={el.image} alt="recipe" width={30} />
                         <div>Title: {el.title}</div>
                         <div>Category: {el.category}</div>
                         <div>Price: {el.price}</div>
@@ -131,7 +131,7 @@ function App() {
 
         const handleSubmit = (e) => {
             e.preventDefault();
-            fetch("http://localhost:8081/addProducts", {
+            fetch("http://localhost:8081/addRecipe", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
@@ -151,7 +151,7 @@ function App() {
                 })
                 .catch(error => {
                     console.error('Error adding item:', error);
-                    alert('Error adding product:' + error.message);
+                    alert('Error adding recipe:' + error.message);
                 });
         }
 
@@ -166,7 +166,7 @@ function App() {
                 
 
                 <form onSubmit={handleSubmit}>
-                    <h1>Post a New Product</h1>
+                    <h1>Post a New Recipe</h1>
                     <input type="text" name="id" value={formData.id} onChange={handleChange} placeholder="ID" required /> <br />
                     <input type="text" name="title" value={formData.title} onChange={handleChange} placeholder="Title" required /> <br />
                     <input type="text" name="price" value={formData.price} onChange={handleChange} placeholder="Price" required /> <br />
@@ -181,36 +181,36 @@ function App() {
     }
 
     const Deletecatalog = () => {
-        const [products, setProducts] = useState([]);
+        const [recipes, setRecipes] = useState([]);
         const [index, setIndex] = useState(0);
         const navigate = useNavigate();
     
         useEffect(() => {
-            fetch("http://localhost:8081/products")
+            fetch("http://localhost:8081/recipes")
                 .then((response) => response.json())
                 .then((data) => {
-                    setProducts(data);
-                    console.log("Load initial Catalog of Products in DELETE :", data);
+                    setRecipes(data);
+                    console.log("Load initial Catalog of Recipes in DELETE :", data);
                 });
         }, []);
     
-        function getOneByOneProductNext() {
-            if (products.length > 0) {
-                if (index === products.length - 1) setIndex(0);
+        function getOneByOneRecipeNext() {
+            if (recipes.length > 0) {
+                if (index === recipes.length - 1) setIndex(0);
                 else setIndex(index + 1);
             }
         }
     
-        function getOneByOneProductPrev() {
-            if (products.length > 0) {
-                if (index === 0) setIndex(products.length - 1);
+        function getOneByOneRecipePrev() {
+            if (recipes.length > 0) {
+                if (index === 0) setIndex(recipes.length - 1);
                 else setIndex(index - 1);
             }
         }
     
-        const deleteOneProduct = (id) => {
-            console.log("Product to delete :", id);
-            fetch("http://localhost:8081/deleteproduct/" + id, {
+        const deleteOneRecipe = (id) => {
+            console.log("Recipe to delete :", id);
+            fetch("http://localhost:8081/deleteRecipe/" + id, {
                 method: "DELETE",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ "id": id }),
@@ -225,10 +225,10 @@ function App() {
                     return response.json();
                 })
                 .then((data) => {
-                    console.log("Delete a product completed : ", id);
+                    console.log("Delete a recipe completed : ", id);
                     console.log(data);
-                    const newProducts = products.filter(product => product.id !== id);
-                    setProducts(newProducts);
+                    const newRecipes = recipes.filter(recipe => recipe.id !== id);
+                    setRecipes(newRecipes);
                     setIndex(0);
                     if (data) {
                         const key = Object.keys(data);
@@ -238,7 +238,7 @@ function App() {
                 })
                 .catch(error => {
                     console.error('Error deleting item:', error);
-                    alert('Error deleting product:' + error.message);
+                    alert('Error deleting recipe:' + error.message);
                 });
         }
     
@@ -252,19 +252,19 @@ function App() {
                     <button className="btn btn-white rounded-pill" onClick={() => navigate('/StudentInfoView')}>Team Members</button>
                 
     
-                <h3>Delete one product:</h3>
-                <button onClick={() => getOneByOneProductPrev()}>Prev</button>
-                <button onClick={() => getOneByOneProductNext()}>Next</button>
-                <button onClick={() => deleteOneProduct(products[index]?.id)}>Delete</button>
+                <h3>Delete one recipe:</h3>
+                <button onClick={() => getOneByOneRecipePrev()}>Prev</button>
+                <button onClick={() => getOneByOneRecipeNext()}>Next</button>
+                <button onClick={() => deleteOneRecipe(recipes[index]?.id)}>Delete</button>
     
-                {products[index] && ( // Add this conditional check
-                    <div key={products[index].id}>
-                        <img src={products[index].image} width={30} /> <br />
-                        Id:{products[index].id} <br />
-                        Title: {products[index].title} <br />
-                        Category: {products[index].category} <br />
-                        Price: {products[index].price} <br />
-                        Rating :{products[index].rating} <br />
+                {recipes[index] && ( // Add this conditional check
+                    <div key={recipes[index].id}>
+                        <img src={recipes[index].image} width={30} /> <br />
+                        Id:{recipes[index].id} <br />
+                        Title: {recipes[index].title} <br />
+                        Category: {recipes[index].category} <br />
+                        Price: {recipes[index].price} <br />
+                        Rating :{recipes[index].rating} <br />
                     </div>
                 )}
             </div>
@@ -294,7 +294,7 @@ function App() {
 
         const handleSubmit = (e) => {
             e.preventDefault();
-            fetch(`http://localhost:8081/updateproduct/${formData.id}`, {
+            fetch(`http://localhost:8081/updateRecipe/${formData.id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
@@ -314,7 +314,7 @@ function App() {
                 })
                 .catch(error => {
                     console.error('Error adding item:', error);
-                    alert('Error adding product:' + error.message);
+                    alert('Error adding recipe:' + error.message);
                 });
         }
 
@@ -329,7 +329,7 @@ function App() {
                 
 
                 <form onSubmit={handleSubmit}>
-                    <h1>Edit a Product</h1>
+                    <h1>Edit a Recipe</h1>
                     <input type="text" name="id" value={formData.id} onChange={handleChange} placeholder="ID" required /> <br />
                     <input type="text" name="title" value={formData.title} onChange={handleChange} placeholder="Title" required /> <br />
                     <input type="text" name="price" value={formData.price} onChange={handleChange} placeholder="Price" required /> <br />

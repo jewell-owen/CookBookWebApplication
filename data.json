@@ -1,0 +1,132 @@
+{
+    "Recipe": [
+        {
+            "recipeId": "1234",
+            "title": "Pizza",
+            "url": "images/Margherita.png",
+            "description": "This is Ellery's favoirte dish to make",
+            "ingredients": "1 ball Best Homemade Pizza Dough\n⅓ cup Easy Pizza Sauce\n3 ounces fresh mozzarella cheese (or about ¾ cup shredded mozzarella)\nKosher salt\n2 basil leaves\nSemolina flour or cornmeal, for dusting the pizza peel",
+            "directions": "1) Prepare the dough using the Best Pizza Dough recipe. Follow the preparation instructions in the dough recipe if prepared in advance.\n2) Place a pizza stone in the oven and preheat to 500°F. OR preheat your pizza oven.\n3) Make the Homemade Pizza Sauce.\n4) Slice the mozzarella into ¼ inch thick pieces. If it’s incredibly watery fresh mozzarella (all brands vary), you may want to let it sit on a paper towel to remove moisture for about 15 minutes then dab the mozzarella with the paper towel to remove any additional moisture.\n5) When the oven is ready, stretch the dough into a circle; see How to Stretch Pizza Dough for instructions. Sprinkle a pizza peel with semolina flour or cornmeal, then carefully place the dough on top. Spread the pizza sauce across the dough. Top with mozzarella cheese.  Taste a bite of the mozzarella cheese; if it does not taste salty, add a few pinches of kosher salt to the pizza.\n6) If you’re baking in a pizza oven, add the basil leaves. For baking in a standard oven, add the basil leaves after you bake (the leaves turn black in a standard oven).\n7) Transfer the pizza to the pizza stone on the pizza peel, then bake until the cheese is melted, about 7 minutes in the oven (or 1 minute in the pizza oven). Slice into pieces and serve immediately."
+        },
+        {
+            "recipeId": "A124",
+            "title": "Chicken Square",
+            "url": "images/chickensquare.jpeg",
+            "description": "This is a recipe that Owen's grandma used to make for his dad.\nIt is a family favorite with lots of great memories.",
+            "ingredients": "1 package (3 oz) cream cheese, softened\n1 tablespoon butter, softened\n2 cups cubed cooked chicken\n1 tablespoon chopped fresh chives or onion\n1/4 teaspoon salt\n1/8 teaspoon pepper\n2 tablespoons milk\n1 tablespoon chopped pimientos, if desired\n1 can (8 oz) refrigerated Pillsbury™ Original Crescent Rolls (8 Count) or 1 can (8 oz) refrigerated Pillsbury™ Original Crescent Dough Sheet\n1 tablespoon butter, melted\n3/4 cup seasoned croutons, crushed",
+            "directions": "1). Heat oven to 350°F. In medium bowl, mix cream cheese and 1 tablespoon softened butter; beat until smooth. Add chicken, chives, salt, pepper, milk and pimientos; mix well.\n2). Separate or cut dough into 4 rectangles. If using crescent dough, firmly press perforations to seal. Spoon 1/2 cup chicken mixture onto center of each rectangle. Pull 4 corners of dough to center of chicken mixture; twist firmly. Pinch edges to seal. Place on ungreased cookie sheet. Brush tops of sandwiches with 1 tablespoon melted butter; sprinkle with crushed croutons.\n3). Bake 25 to 30 minutes or until golden brown."
+        },
+        {
+            "recipeId": "76788",
+            "title": "Taco Ring",
+            "url": "images/tacoring.jpg",
+            "description": "This is a recipe that Owen enjoys and is great leftover.\nIt is also very easy to make.",
+            "ingredients": "½ lb (700 g) lean (90%) ground beef\n1 pkg (1-1.25 oz/30-35 g) taco seasoning mix\n1¾ cups (7 oz/200 g) shredded cheddar cheese, divided\n2 tbsp (45 mL) water\n 2 pkg (8 oz /250 g each) refrigerated crescent rolls\n1   egg white, lightly beaten\nOptional toppings: salsa, shredded lettuce, chopped onion and tomato, sliced olives, and sour cream",
+            "directions": "1). Preheat the oven to 375°F (190°C). Cook the ground beef in a 5-qt. (4.7-L) Brilliance Nonstick Saute Pan over medium heat for 10-12 minutes or until it's no longer pink, breaking beef into crumbles, then drain. Transfer the beef to a Classic Batter Bowl. Stir in the taco seasoning mix, 1 ½ cups of the cheese, and water.\n2). Unroll the crescent dough and separate it into 16 triangles. Arrange the triangles, slightly overlapping, in a circle on a Pizza Stone with the wide ends of the triangles overlapping in the center and points toward the outside. There should be a 5 inch (13-cm)-diameter opening in the center of the stone. The narrow triangle points of dough will extend off the edge of the baking stone.\n3). Using a Large Scoop, scoop the filling evenly over the dough in a continuous circle. Bring the points of triangles up over the filling and tuck them under the dough at center to form a ring. (Filling will show.) Brush the top with the egg white. Sprinkle with the remaining cheese. Bake for 25-30 minutes or until it is golden brown. Serve with toppings."
+        },
+        {
+            "recipeId": "B124",
+            "title": "Pesto Pasta",
+            "url": "images/pestopasta.webp",
+            "description": "This is one of Owen's favorite dinner recipes.\nIt is very tasty and also great for leftovers.",
+            "ingredients": "Boneless Skinless Chicken breasts - season genoursly with salt and pepper\nPesto - I use a jar of Classico Traditional Basil Pesto. This ends up being about a cup of pesto.\nSalted butter - no need to melt, just slice it!\nLemon - use a half of a large lemon. Do not use jarred lemon juice for this meal.\nRotini Pasta cooked to al dente and drained - DO NOT ADD THIS UNTIL THE CHICKEN IS DONE COOKING\nGrated Parmesan - Mix this in with the pasta and chicken.\nShredded mozzarella - Sprinkle this on top of the dish and let melt.\nDried basil - for garnish",
+            "directions": "1). Add the chicken and top with salt and pepper.\n2). Smear over the pesto over the chicken.\n3). Squeeze over the lemon juice.\n4). Slice the butter and add on top.\n5). Place the lid on the slow cooker. Cook on LOW for 5-6 hours without opening the lid during the cooking time\n6). Shred the chicken right in the slow cooker with 2 forks.\n7). Add the cooked and drained pasta and the parmesan cheese, stir. \n8). Sprinkle over the mozzarella cheese. Place the lid back on the slow cooker for 15 minutes more or until the cheese melts."
+        },
+        {
+            "recipeId": "Dirt",
+            "title": "Dirt",
+            "url": "images/Dirt.jpg",
+            "description": "This is a creamy, oreo-based dessert that Ellery's Grandma like to make. Don’t tell your guests this is their dessert until the end of the meal.",
+            "ingredients": "1 1/4 package of Oreo cookies (crushed)\n1 stick of butter\n2 (8oz) pkg cream cheese\n1 1/2 cup powdered sugar (or cream filling from Oreo)\n2 1/2 cup milk\n3 small package instant chocolate pudding\n16 oz cool whip",
+            "directions": "1) Cream together butter, cream cheese and powdered sugar.\n2) In another bowl mix milk, pudding mix and cool whip.\n3) Add to cheese mixture and blend well.\n4) Layer cookie crumbs alternately with pudding mixture beginning and ending with crumbs.\n5) Breaking about 6 Oreo cookies at a time into a blender works well to crush cookies.\n6) Put dirt into a planter, add flowers and gummy worms.\n7) Don’t tell your guests this is their dessert until the end of the meal."
+        },
+        {
+            "recipeId": "Kolacky",
+            "title": "Kolacky",
+            "url": "images/kolacky.jpg",
+            "description": "This is pastry that Ellery's Grandma like to make for her Grandkids",
+            "ingredients": "2 cup flour\n8oz cream cheese\n2 sticks butter \nPowdered sugar, top",
+            "directions": "1) Cut with pastry cutter all ingredients like you would for a pie dough.\n2)Roll out with some flour on the board.\n3)Cut into round shapes. I use the top (lid) of a large jar to cut dough.\n4)Use any filling you want into the middle.\n5)Bake for 400*F for 10 minutes or until lightly brown."
+        },
+        {
+            "recipeId": "Russian",
+            "title": "Russian Pudding",
+            "url": "images/RussianPudding.jpg",
+            "description": "This gelatin like cake is comes from Ellery's mom's dessert",
+            "ingredients": "2 packets of Knox gelatin\n2 1/2 C boiling water\n1 C coffee mate\n1/2 C sugar\n8oz sour cream",
+            "directions": "1) Dissolve gelatin with boiling water.\n2)Add coffee mate, sugar and sour cream.\n3)Beat and mix well.\n4)Chill into a bundt cake mold.\n5)For topping, add frozen sugared strawberries around the pudding."
+        },
+        {
+            "recipeId": "HOPIA",
+            "title": "Hopia",
+            "url": "images/Hopia.jfif",
+            "description": "This is a dessert that you can use ube, mango, etc. This comes from Ellery's Grandma",
+            "ingredients": "<strong>Dough</strong>\n2 1/2 C all purpose flour\n1/2 C water \n1/2 tbsp sugar\n1/ Tbsp corn syrup\n1/2 C pork lard\n\n<strong>Paste</strong>\n1 C all purpose flour\n1/2 C pork lard\n\n<strong>Filling</strong>\n2 C mango cooked or paste (or  Ube)\n1 C sugar",
+            "directions": "Sift flour in a large bowl.  Make a well add water sugar and corn syrup.  Stir water gently to dissolve sugar and syrup.  Stir water gently to dissolve sugar and syrup. Add pork lard and mix with wooden spoon just to incorporate ingredients with flour.  Form dough into a ball, cover with cloth and set aside for 30 mins.  In a bowl mix together 1 C flour, 1/2 C pork lard until homogenous paste is formed.  On lightly floured bard, roll out dough with a rolling pin, to form a rectangle 1/4 inch thick.  With a spatula spread the paste evenly over the rectangular dough.  Fold the uncovered portion over the center and fold the remaining 1/3 over the first gold to make 3 layers of dough with ease in between each layer.  Roll out dough into original size and repeat folding process without the paste.  Roll dough to its original size.  Cut sheet of dough lengthwise into 2 equal portions.  Roll each portion in jelly and roll with rolling pin to form circular pieces. Put about 1 tbsp of filing at the center and bring sides to the top center.  Seal, press top to flatten.  Bake in uncreased pan, brush with egg wash(yolk).  Bake at 400*F  for 25-30 minutes."
+        },
+        {
+            "recipeId": "Rice",
+            "title": "Puto (Rice cakes)",
+            "url": "images/Puto-rice-cake.jfif",
+            "description": "Don't let the name fool you, this filipino dish is beloved around the country",
+            "ingredients": "2 C rice (soak, clean, blend with 1 1/2 C water)\n1/4 tsp yeast in every cup of rice (add 1/4 C warm water\n1 1/2 C white sugar\n1/2 tsp salt\n2 scoops of cooked rice",
+            "directions": "Let rise until it doubles its bulk.  Steam until done."
+        },
+        {
+            "recipeId": "Edna",
+            "title": "Puto (Edna Claudio)",
+            "url": "images/Puto-Edna.jpg",
+            "description": "This is the same as the puto dessert, but it is more glossy and seeds",
+            "ingredients": "2 rice or all purpose rice flour\n1 C milk\n1/2 C water\n3 tsp baking powder\n1 or more egg whites (glossy)\n1  1/4 c sugar \nAnise seeds",
+            "directions": "Beat egg whites, then mix other ingredients. Steam  5-6 minutes"
+        },
+        {
+            "recipeId": "Apple",
+            "title": "Apple Cake",
+            "url": "images/apple-cake.jpg",
+            "description": "This apple cake come from Ellery's Grandma. This goes great with ice cream or yogurt",
+            "ingredients": "3 C flour\n3 C apple cubes\n2 C sugar\n1 tsp cinnamon\n1 tsp nutmeg\n3 eggs\n1 C cooking oil\n1 C nuts\n\n<strong>TOPPING</strong>\n1/2 C sugar\n1 tsp cinnamon\n1/4 C nuts",
+            "directions": "Mix and bake in well grease & flour pan, at 350* F until done (about 45 mins)"
+        },
+        {
+            "recipeId": "Fall",
+            "title": "Fall Apple Cake",
+            "url": "images/fall-apple-cake.jpg",
+            "description": "This is the same as the regular apple cake, just with some added ingredients",
+            "ingredients": "1 1/4 C sugar\n1/2 C cooking oil\n2 egg whites\n1 egg\n2 tsp vanilla extract\n1 C apple juice\n2 C all purpose four\n3/4 C whole wheat flour\n2 tsp baking powder\n2 tsp cinnamon\n1 tsp nutmeg\n1/2 tsp baking soda\n3 C peeled, cored and sliced cooking apples\n1/2 C finely chopped toasted walnuts\nPowdered sugar and vanilla yogurt (optional)",
+            "directions": "In a large mixer bowl, beat sugar and oil on medium speed till combined. Add eggs & vanilla.  Beat on medium speed for 1 minute or till creamy.  Stir in juice in a medium bowl tire together all purpose flour, whole wheat flour, baking powder, cinnamon, nutmeg & baking soda. Stir flour mixture into egg mixture.  Stir in apples and the walnuts.  Pour latte into a greased and floured 10 inch tube pan. Bake at350* for 60-65 mins.  Rove form pan, cool for 30 minutes. Sprinkle with powdered sugar top each slice with a dollop of vanilla yogurt & nutmeg."
+        },
+        {
+            "recipeId": "Pumpkin",
+            "title": "Pumpkin Bread",
+            "url": "images/pumpkin-bread.jpg",
+            "description": "This fall dessert is great when you some pumpkins laying around",
+            "ingredients": "2 C cooked PUMPKIN or 16oz canned pumpkin\n3 1/2 C Flour\n3 C SUGAR\n1 C vegetable oil\n4 beaten eggs\n2 tsp baking soda\n1 tsp baking powder\n2 tsp salt\n1 tsp each of all spice, cinnamon, nutmeg and cloves\n2/3 C water",
+            "directions": "Cream oil and sugar. Add eggs pumpkin, beat well. Sift together dry ingredients. Add dry ingredients alternately with water. Pour into 2 well greased & floured pans (9x5, 2 loaves)\nBake at 350*F for 1 hour.  Let stand for 10 minutes. Remove from pan, cool."
+        },
+        {
+            "recipeId": "Cream",
+            "title": "Cream Puff",
+            "url": "images/cream-puff.jpg",
+            "description": "This desset comes from Ellery's Grandma. This is a great dessert for a snack",
+            "ingredients": "1 C water\n1 stick butter\n1 tsp salt\n1 C flour\n4 eggs",
+            "directions": "Bring water and butter to boil. Remove from stove\nADD flour, salt and mix\nADD eggs one at a time. Mix very well. \nBake at 325*F for 35 minutes"
+        },
+        {
+            "recipeId": "Pianono",
+            "title": "Pianono",
+            "url": "images/Pianono.jpg",
+            "description": "This dessert is egg based dish from Ellery's Grandma",
+            "ingredients": "Filling:\n1 stick maragarine\n1 C evaporated milk\n4 eggs yolks\n1/2 C sugar\n2 tsp cornstarch\n1 bottle macapuno(coconut)\n\nCake:\n1/2 C flour\n1/2 C sugar\n3-4 eggs\n1 tsp Cream of tartar\n2 tsp baking powder",
+            "directions": "Melt margarine (low fire) add milk, then egg yolks, sugar, cornstarch until thick. Cool then add macapuno.\n\nBeat egg whites (with cream of tartar) then add egg yolks fillings then fold the ingredients.\nBake at 350*F for 10-12 minutes. Let cook before rolling.  \nRoll with filling"
+        },
+        {
+            "recipeId": "Mocha",
+            "title": "Mocha Roll",
+            "url": "images/Mocha-Roll.jpg",
+            "description": "This is almost the same as Pianono, but with the extra flavor of mocha",
+            "ingredients": "1 C cake flour\n1 tsp baking powder\n4 large eggs\n3/4 C sugar\n1 tsp vanilla extract\n\nMocha Filling:\n1/2 lb butter or margarine\n1 1/2 C powdered sugar\n3 tbsp strong coffee & milk\n1/2 C chopped nuts or any kind",
+            "directions": "Beat eggs, add sugar, add 1/3 C water & vanilla extract. Slowly mix in the dry ingredients.\nBake 375* F for 12-15 minutes"
+        }
+    ]
+}
