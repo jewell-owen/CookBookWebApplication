@@ -179,7 +179,8 @@ function App() {
                                 <p><strong>Course Number:</strong> 319</p>
                                 <p><strong>Course Name:</strong> Com S</p>
                                 <p><strong>Date:</strong> 5/09/2024</p>
-                                <p><strong>Professor Name:</strong> Ali Jannesari</p>
+                                <p><strong>Professor Name:</strong> Ali Jannesari, jannesar@iastate.edu </p>
+                                <p><strong>Professor Name:</strong> Abraham Aldaco, aaldaco@iastate.edu </p>
                             </div>
                             <div className="project-introduction">
                                 <h2>Project Introduction</h2>
