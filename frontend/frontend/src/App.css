@@ -56,21 +56,21 @@
   background-color: #E78895;
   padding: 20px;
   text-align: center;
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 20px; /* Rounded corners */
 }
 
 .card-pinktan-box {
   background-color: #FFE4C9;
   padding: 20px;
   text-align: center;
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 20px; /* Rounded corners */
 }
 
 .card-tan-box {
   background-color: #FFE4C9;
   padding: 10px;
   margin-top: 10px;
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 20px; /* Rounded corners */
 }
 
 .card-subtitle {
@@ -80,8 +80,7 @@
 .student-info-box {
   background-color: #FFF7F1;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
 .student-info-container {
@@ -101,5 +100,13 @@
 }
 
 .project-introduction h2 {
+  margin-bottom: 10px;
+}
+
+.container {
+  padding: 20px;
+}
+
+input[type="text"], .btn {
   margin-bottom: 10px;
 }
