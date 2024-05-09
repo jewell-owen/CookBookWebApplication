@@ -16,7 +16,7 @@ function App() {
 
         // useEffect to load recipes when load page
         useEffect(() => {
-            fetch("http://127.0.0.1:4000/catalog")
+            fetch("http://127.0.0.1:8081/catalog")
                 .then((response) => response.json())
                 .then((data) => {
                     console.log("Show Catalog of Recipes :", data);
@@ -58,7 +58,7 @@ function App() {
         // useEffect to load catalog once HOOK id is modified
         useEffect(() => {
             if (id) {
-                fetch(`http://127.0.0.1:4000/catalog/${id}`)
+                fetch(`http://127.0.0.1:8081/catalog/${id}`)
                     .then((response) => response.json())
                     .then((data) => {
                         console.log("Show one recipe :", data);
@@ -122,7 +122,7 @@ function App() {
         const handleSubmit = (e) => {
             e.preventDefault();
             console.log(e.target.value);
-            fetch("http://127.0.0.1:4000/catalog", {
+            fetch("http://127.0.0.1:8081/catalog", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
@@ -190,7 +190,7 @@ function App() {
 
         // useEffect to load catalog when load page
         useEffect(() => {
-            fetch("http://127.0.0.1:4000/catalog")
+            fetch("http://127.0.0.1:8081/catalog")
                 .then((response) => response.json())
                 .then((data) => {
                     setRecipes(data);
@@ -216,7 +216,7 @@ function App() {
         // Delete de recipe by its id <- id is Hook
         const deleteOneRecipe = (id) => {
             console.log("Recipe to delete :", id);
-            fetch("http://localhost:4000/catalog/" + id, {
+            fetch("http://localhost:8081/catalog/" + id, {
                 method: "DELETE",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ "id": id }),
@@ -305,7 +305,7 @@ function App() {
         const handleSubmit = (e) => {
             e.preventDefault();
             console.log(e.target.value);
-            fetch(`http://127.0.0.1:4000/catalog/${formData.id}`, {
+            fetch(`http://127.0.0.1:8081/catalog/${formData.id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
@@ -360,7 +360,7 @@ function App() {
         const [searchResults, setSearchResults] = useState([]);
     
         const handleSearch = () => {
-            fetch(`http://127.0.0.1:4000/catalog/category/${category}`)
+            fetch(`http://127.0.0.1:8081/catalog/category/${category}`)
                 .then((response) => response.json())
                 .then((data) => {
                     console.log("Search Results:", data);
