@@ -36,3 +36,70 @@
     transform: rotate(360deg);
   }
 }
+
+
+.navbar-custom {
+  background-color: #FFE4C9 !important;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-pink-box {
+  background-color: #E78895;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.card-pinktan-box {
+  background-color: #FFE4C9;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.card-tan-box {
+  background-color: #FFE4C9;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.card-subtitle {
+  font-weight: bold;
+}
+
+.student-info-box {
+  background-color: #FFF7F1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-info-container {
+  text-align: center;
+}
+
+.info-section {
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  margin: 5px 0;
+}
+
+.project-introduction {
+  margin-bottom: 30px;
+}
+
+.project-introduction h2 {
+  margin-bottom: 10px;
+}

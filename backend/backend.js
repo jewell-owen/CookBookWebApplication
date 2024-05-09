@@ -33,11 +33,13 @@ app.get("/listRecipes", async (req, res) => {
   res.send(results);
 });
 
+
+
 app.get("/:id", async (req, res) => {
   try {
-    const recipeid = Number(req.params.id);
+    const recipeid = req.params.id;
     console.log("Recipe to find: ", recipeid);
-    const query = { id: recipeid };
+    const query = { recipeId: recipeid }; // Update key to recipeId
     const result = await db.collection("recipe").findOne(query);
     if (!result) {
       res.status(404).send("Not Found");
@@ -57,18 +59,18 @@ app.post("/addRecipe", async (req, res) => {
       return res.status(400).send({ error: "Bad request: No data provided." });
     }
 
-    const values = Object.values(req.body);
     const newDocument = {
-      id: values[0],
-      name: values[1],
-      price: values[2],
-      description: values[3],
-      imageUrl: values[4],
+      recipeId: req.body.recipeId,
+      title: req.body.title,
+      url: req.body.url,
+      description: req.body.description,
+      ingredients: req.body.ingredients,
+      directions: req.body.directions,
     };
 
     const existingDoc = await db
       .collection("recipe")
-      .findOne({ id: newDocument.id });
+      .findOne({ recipeId: newDocument.recipeId });
     if (existingDoc) {
       return res
         .status(409)
@@ -90,7 +92,7 @@ app.delete("/deleteRecipe/:id", async (req, res) => {
     await client.connect();
     console.log("Recipe to delete: ", id);
 
-    const query = { id: id };
+    const query = { recipeId: id }; // Update key to recipeId
 
     //delete
     const results = await db.collection("recipe").deleteOne(query);
@@ -104,17 +106,18 @@ app.delete("/deleteRecipe/:id", async (req, res) => {
 
 app.put("/updateRecipe/:id", async (req, res) => {
   const id = Number(req.params.id);
-  const query = { id: id };
+  const query = { recipeId: id }; // Update key to recipeId
   await client.connect();
   console.log("Recipe to Update :", id);
   // Data for updating the document, typically comes from the request body
   console.log(req.body);
   const updateData = {
     $set: {
-      name: req.body.name,
-      price: req.body.price,
+      title: req.body.title,
+      url: req.body.url,
       description: req.body.description,
-      imageUrl: req.body.imageUrl,
+      ingredients: req.body.ingredients,
+      directions: req.body.directions,
     },
   };
   // Add options if needed, for example { upsert: true } to create a document if it doesn't exist
