@@ -94,9 +94,6 @@ function App() {
         );
     };
 
-
-
-
     const StudentInfoView = () => {
         const navigate = useNavigate();
 
